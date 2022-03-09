@@ -1,8 +1,9 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 
+import os
+import sys
 
-import os, sys
-from PluginToolkit import *
+from Toolkit import Log
 
 
 Log.write('Checking launch items ...')
@@ -25,13 +26,13 @@ def main():
 	Log.write('Starting plugin ...')
 	output = ''
 	e = 0
-    
+
 	# This is where a lot of work would go ...
 	#
 	#    read
 	output += '\n\n'
 	output += '/Library/LaunchAgents:\n\n'
-	output +=  	'\n'.join(os.listdir('/Library/LaunchAgents'))
+	output += '\n'.join(os.listdir('/Library/LaunchAgents'))
 	output += '\n\n'
 	output += '/Library/LaunchDaemons:\n\n'
 	output += '\n'.join(os.listdir('/Library/LaunchDaemons'))
