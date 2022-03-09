@@ -19,7 +19,7 @@ def main():
     e = 0
     issuecount = 0
     infcount = 0
-    
+
     if os.path.isfile(resultsFile):
         output += '\n\n'
         output += 'DetectX Results:\n'
