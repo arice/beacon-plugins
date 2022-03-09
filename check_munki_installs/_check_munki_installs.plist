@@ -5,7 +5,11 @@
 	<key>PluginName</key>
 	<string>Maintenance installs</string>
 	<key>PluginVersion</key>
-	<string>0.2</string>
+	<string>0.3</string>
+	<key>PluginSlug</key>
+	<string>maintenance-installs</string>
+	<key>PluginUUID</key>
+	<string>964d4bd8-3d00-47fa-967d-694fa5c24e11</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>_check_munki_installs.plugin</string>
