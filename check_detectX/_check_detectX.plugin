@@ -5,8 +5,7 @@ import os
 import subprocess
 import sys
 
-from PluginToolkit import *
-
+from Toolkit import Log
 
 Log.write('Checking DetectX Swift output ...')
 
