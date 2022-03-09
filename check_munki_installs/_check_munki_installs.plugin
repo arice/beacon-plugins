@@ -1,0 +1,31 @@
+#! /usr/bin/env python3
+
+
+import os, sys, subprocess
+from PluginToolkit import *
+
+
+Log.write('Checking recent munki installs ...')
+
+
+logFile = '/Library/Managed Installs/Logs/Install.log'
+nInstalls = '20'
+
+
+def main():
+	Log.write('Starting plugin ...')
+	output = ''
+	e = 0
+    
+	if os.path.isfile(logFile):
+		output += '\n\n'
+		output += 'Latest Managed Software Center installs:\n\n'
+		output += '\n'+(subprocess.check_output(['tail','-'+nInstalls,logFile]))
+		output += '\n\n'
+		print(output)
+	else:
+		e = 25
+	sys.exit(e)
+
+if __name__ == '__main__':
+	main()

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PluginName</key>
+	<string>Maintenance installs</string>
+	<key>PluginVersion</key>
+	<string>0.2</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>_check_munki_installs.plugin</string>
+	</array>
+	<key>PluginVisible</key>
+	<true/>
+</dict>
+</plist>

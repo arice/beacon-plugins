@@ -1,0 +1,50 @@
+#! /usr/bin/env python3
+
+
+import os, sys
+from PluginToolkit import *
+
+
+Log.write('Checking launch items ...')
+
+
+# settings_plist = '/Library/MonitoringClient/PluginSupport/_check_launchitems.plist'
+# base_settings = {
+# 	'Some_Setting'       : 'default string',
+# 	'Other_Settings'     : 6,
+# 	'PrefPaneVisibility' : True
+# }
+# settings = check_settings(base_settings, settings_plist)
+
+
+# app_plist = '/Library/App/Logs/Log.plist'
+# app_data = readPlist(app_plist)
+
+
+def main():
+	Log.write('Starting plugin ...')
+	output = ''
+	e = 0
+    
+	# This is where a lot of work would go ...
+	#
+	#    read
+	output += '\n\n'
+	output += '/Library/LaunchAgents:\n\n'
+	output +=  	'\n'.join(os.listdir('/Library/LaunchAgents'))
+	output += '\n\n'
+	output += '/Library/LaunchDaemons:\n\n'
+	output += '\n'.join(os.listdir('/Library/LaunchDaemons'))
+	output += '\n'
+	#    scan
+	#    ... coffee break ...
+	#    check
+	#    command
+
+
+	# output += "Base Python Plugin Output!"
+	print(output)
+	sys.exit(e)
+
+if __name__ == '__main__':
+	main()
