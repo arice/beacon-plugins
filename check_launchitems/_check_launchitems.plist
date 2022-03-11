@@ -4,8 +4,12 @@
 <dict>
 	<key>PluginName</key>
 	<string>Launch Agents &amp; Daemons</string>
+	<key>PluginSlug</key>
+	<string>launch-agents-daemons</string>
+	<key>PluginUUID</key>
+	<string>ecd078bf-d1a7-4ed2-98af-8d5f7cfb30a8</string>
 	<key>PluginVersion</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>_check_launchitems.plugin</string>
