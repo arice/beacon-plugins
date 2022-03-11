@@ -1,9 +1,11 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 
+import json
+import os
+import subprocess
+import sys
 
-import os, sys, subprocess, json
-from PluginToolkit import *
-
+from Toolkit import Log
 
 Log.write('Checking DetectX Swift output ...')
 
@@ -17,7 +19,7 @@ def main():
     e = 0
     issuecount = 0
     infcount = 0
-    
+
     if os.path.isfile(resultsFile):
         output += '\n\n'
         output += 'DetectX Results:\n'
